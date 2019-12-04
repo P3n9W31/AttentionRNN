@@ -14,6 +14,18 @@ Attention-based RNN model for Chinese-English translation
 
 The Chinese-English translation data used in this project is just sample data, change them as you like.(Cn-863k, En-1.1M)
 
+**Data Format**: 
+
+```
+sentence-1-word-1 sentence-1-word-2 sentence-1-word-3. [\n]
+sentence-2-word-1 sentence-2-word-2 sentence-2-word-3 sentence-2-word-4. [\n]
+......
+```
+
+Chinese-English data should be paired.
+
+
+
 ## Installation
 
 Python3.6+ needed.
@@ -234,6 +246,11 @@ Tested on CPU and Single GPU.
 | ----------- | ----------------------------------------- | -------------------- |
 | CPU         | Intel(R) Xeon(R) CPU E5-2678 v3 @ 2.50GHz | 3 min 20 sec / Epoch |
 | GPU         | GeForce GTX 1080 Ti                       | 12 sec / Epoch       |
+
+## To Do
+
+* Train on public dataset
+* Test script
 
 ## License
 
