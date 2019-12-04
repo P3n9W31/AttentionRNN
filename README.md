@@ -46,7 +46,7 @@ pip3 -r requirements.txt
 
 You better do it under a Virtual environment, for Pytorch is kinda annoying to migrate between different versions.
 
-### Usage
+## Usage
 
 1. **Generating vocabulary**
 
@@ -160,7 +160,7 @@ You better do it under a Virtual environment, for Pytorch is kinda annoying to m
 
    
 
-### Evaluation
+## Evaluation
 
 The evaluation metric for Chinese-English we use is case-insensitive BLEU. We use the `muti-bleu.perl` script from [Moses](https://github.com/moses-smt/mosesdecoder) to compute the BLEU.
 
@@ -171,9 +171,8 @@ Loss and BLEU Score:
 <img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/bleu.png" width="400">
 </p>
 
+## Results on Chinese-English translation
 
-
-### Results on Chinese-English translation
 1. Epoch-1
 
    ```
