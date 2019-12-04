@@ -224,6 +224,17 @@ Loss and BLEU Score:
 
    As the data I use is too simple, the results are **just a reference**.
 
+
+
+## Device
+
+Tested on CPU and Single GPU.
+
+| Device Type | Device                                    | Speed                |
+| ----------- | ----------------------------------------- | -------------------- |
+| CPU         | Intel(R) Xeon(R) CPU E5-2678 v3 @ 2.50GHz | 3 min 20 sec / Epoch |
+| GPU         | GeForce GTX 1080 Ti                       | 12 sec / Epoch       |
+
 ## License
 
 MIT License
