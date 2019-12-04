@@ -1,11 +1,11 @@
-#Attention-based RNN for Seq2Seq Machine Translation
+# Attention-based RNN for Seq2Seq Machine Translation
 
 Attention-based RNN model for Chinese-English translation
 
 ## Basic Structure
 
 <p align="center">
-<img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/structure.png" width="500">
+<img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/structure.png" width="600">
 </p>
 
 > Britz D, Goldie A, Luong M T, et al. Massive exploration of neural machine translation architectures[J]. arXiv preprint arXiv:1703.03906, 2017.
@@ -169,7 +169,7 @@ Loss and BLEU Score:
    +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                                                                                                                                                                 |
    +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 事实 的 真相 是 , 两 会 达成 的 共识 是 ‘ 海峡 两 岸 均 坚持 一 个 中国 原则 ’ 。                                                                                                                                                                                                     |
+   | Source     | 事实 的 真相 是 , 两 会 达成 的 共识 是 ‘ 海峡 两 岸 均 坚持 一 个 中国 原则 ’ 。                                                                                                                                                                                                              |
    | Target     | the truth is that the consensus reached by the arats and the sef is that " both sides on the taiwan strait stick to the one-china principle . "                                                                                                                                       |
    | Predict    | the , the , the , the , the , the , the , the , the , and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the and the |
    +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -181,7 +181,7 @@ Loss and BLEU Score:
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                                        |
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 干部们 的 出发点 是 好 的 , 但 不 能 急于 求成 , 以 牺牲 农民 的 权益 为 代价 。                                                                             |
+   | Source     | 干部们 的 出发点 是 好 的 , 但 不 能 急于 求成 , 以 牺牲 农民 的 权益 为 代价 。                                                                                      |
    | Target     | the intention of those cadres is good , but they should not be over-anxious to achieve an instant result at the expense of peasants ' rights and interests . |
    | Predict    | it is not only by the fundamental interests of the united states , but it is not only by the people 's interests and the people .                            |
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -193,7 +193,7 @@ Loss and BLEU Score:
    +------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                                          |
    +------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 例如 美国 , 其 国内 存在 严重 违反 人权 的 状况 , 迄今 非但 没有 改善 , 反而 不断 恶化 。                                                                      |
+   | Source     | 例如 美国 , 其 国内 存在 严重 违反 人权 的 状况 , 迄今 非但 没有 改善 , 反而 不断 恶化 。                                                                                 |
    | Target     | in the united states , for instance , there are serious violations of human rights , and far from being put right , this situation is actually deteriorating . |
    | Predict    | in the united states , for instance , human rights situation in the united states , for human rights , and this is not rather serious .                        |
    +------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -205,7 +205,7 @@ Loss and BLEU Score:
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                                       |
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 真正 的 马克思主义者 , 不 可能 要求 经典 作家 为 他们 身 后 所 产生 的 问题 提供 现成 的 答案 。                                                            |
+   | Source     | 真正 的 马克思主义者 , 不 可能 要求 经典 作家 为 他们 身 后 所 产生 的 问题 提供 现成 的 答案 。                                                                        |
    | Target     | real marxists cannot require the authors of the [ marxist ] classics to provide ready-made solutions to the problems that have occurred since their death . |
    | Predict    | real marxists cannot require the authors of the [ marxist ] classics to provide ready-made solutions to the problems that have occurred since their death . |
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,7 +217,7 @@ Loss and BLEU Score:
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                     |
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 一九九0 年 一月 二十三日 , 她 辞职 并 申请 赴 美 , 于 当年 定居 美国 , 一九九六年 加入 美国 国籍 。                                       |
+   | Source     | 一九九0 年 一月 二十三日 , 她 辞职 并 申请 赴 美 , 于 当年 定居 美国 , 一九九六年 加入 美国 国籍 。                                                   |
    | Target     | on 23 january 1990 she resigned ad requested to go to the united states , where she settled that year . she became a us citizen in 1996 . |
    | Predict    | on 23 january 1990 she resigned ad requested to go to the united states , where she settled that year . she became a us citizen in 1996 . |
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------+
