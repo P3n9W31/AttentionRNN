@@ -44,10 +44,9 @@ You better do it under a Virtual environment, for Pytorch is kinda annoying to m
    ./bulid_vocab.sh
    ```
 
-   or you can modify the data source and path in bulid_vocab.sh: 
+   or you can modify the data source and path in bulid_vocab.sh:
 
    ```bash
-   #! /bin/bash
    python3 scripts/buildvocab.py \
    --corpus data/cn.txt \
    --output data/cn.voc.pkl \
@@ -181,7 +180,7 @@ Loss and BLEU Score:
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Key        | Value                                                                                                                                                        |
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Source     | 干部们 的 出发点 是 好 的 , 但 不 能 急于 求成 , 以 牺牲 农民 的 权益 为 代价 。                                                                                      |
+   | Source     | 干部们 的 出发点 是 好 的 , 但 不 能 急于 求成 , 以 牺牲 农民 的 权益 为 代价 。                                                                                       |
    | Target     | the intention of those cadres is good , but they should not be over-anxious to achieve an instant result at the expense of peasants ' rights and interests . |
    | Predict    | it is not only by the fundamental interests of the united states , but it is not only by the people 's interests and the people .                            |
    +------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
