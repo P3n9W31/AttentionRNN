@@ -16,7 +16,7 @@ The Chinese-English translation data used in this project is just sample data, c
 
 ## Installation
 
-Python3 needed.
+Python3.6+ needed.
 
 The following packages are needed:
 
@@ -36,7 +36,7 @@ You better do it under a Virtual environment, for Pytorch is kinda annoying to m
 
 ### Usage
 
-1.  **Generating vocabulary**
+1. **Generating vocabulary**
 
    First thing first, Generating vocabulary for training, run **bulid_vocab.sh** in terminal:
 
