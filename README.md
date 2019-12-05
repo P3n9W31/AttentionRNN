@@ -13,7 +13,7 @@ Attention-based RNN model for Chinese-English translation
 ## Process
 
 <p align="center">
-<img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/process.png" width="600">
+<img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/process.gif" width="600">
 </p>
 
 > google/seq2seq. GitHub.  https://github.com/google/seq2seq
