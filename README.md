@@ -42,8 +42,9 @@ The following packages are needed:
 
 ```txt
 terminaltables==3.1.0
-torch==1.3.0
 numpy==1.14.0
+torch==1.3.0
+tensorboardX==1.9
 ```
 
 Easily, you can install all requirement with:
