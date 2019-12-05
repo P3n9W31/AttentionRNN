@@ -10,6 +10,14 @@ Attention-based RNN model for Chinese-English translation
 
 > Britz D, Goldie A, Luong M T, et al. Massive exploration of neural machine translation architectures[J]. arXiv preprint arXiv:1703.03906, 2017.
 
+## Process
+
+<p align="center">
+<img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/process.png" width="600">
+</p>
+
+> google/seq2seq. GitHub.  https://github.com/google/seq2seq
+
 ## Data Explanation
 
 The Chinese-English translation data used in this project is just sample data, change them as you like.(Cn-863k, En-1.1M)
@@ -156,6 +164,12 @@ You better do it under a Virtual environment, for Pytorch is kinda annoying to m
 
    ```bash
    ./start.sh
+   ```
+
+4. Visualize the training process on tensorboard
+
+   ```bash
+   tensorboard --logdir runs
    ```
 
    
