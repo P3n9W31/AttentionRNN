@@ -11,6 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.utils.data
 from terminaltables import AsciiTable
+from tensorboardX import SummaryWriter
 
 import model
 from bleu import bleu
@@ -158,6 +159,9 @@ if opt.local_rank is not None:
     device_ids = [opt.local_rank]
 device = torch.device(device_type)
 
+# tensorboardX
+writer = SummaryWriter()
+
 # load vocabulary for source and target
 src_vocab, trg_vocab = {}, {}
 src_vocab["stoi"] = load_vocab(opt.src_vocab)
@@ -278,6 +282,10 @@ def train(epoch):
             )
         else:
             loss, w_loss = model(src, src_mask, f_trg, f_trg_mask, b_trg, b_trg_mask)
+        global_batches = len(train_iter) * epoch + current_batches
+        writer.add_scalar(
+            "./loss", scalar_value=loss.item(), global_step=global_batches,
+        )
         loss.mean().backward()
         torch.nn.utils.clip_grad_norm_(param_list, opt.grad_clip)
         optimizer.step()
@@ -393,6 +401,11 @@ def evaluate(batch_idx, epoch):
     bleu_2_gram = bleu(hyp_list, ref_list, smoothing=True, n=2)
     bleu_3_gram = bleu(hyp_list, ref_list, smoothing=True, n=3)
     bleu_4_gram = bleu(hyp_list, ref_list, smoothing=True, n=4)
+    writer.add_scalar("./bleu_1_gram", bleu_1_gram, epoch)
+    writer.add_scalar("./bleu_2_gram", bleu_2_gram, epoch)
+    writer.add_scalar("./bleu_3_gram", bleu_3_gram, epoch)
+    writer.add_scalar("./bleu_4_gram", bleu_4_gram, epoch)
+    writer.add_scalar("./multi-bleu", bleu2, epoch)
     bleu_result = [
         ["multi-bleu", "bleu_1-gram", "bleu_2-gram", "bleu_3-gram", "bleu_4-gram"],
         [bleu2, bleu_1_gram, bleu_2_gram, bleu_3_gram, bleu_4_gram],
