@@ -2,7 +2,7 @@
 
 Attention-based RNN model for Chinese-English translation
 
-## Basic Structure
+## Basic Architecture
 
 <p align="center">
 <img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/structure.png" width="600">
