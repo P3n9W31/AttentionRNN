@@ -87,7 +87,7 @@ You better do it under a Virtual environment, for Pytorch is kinda annoying to m
 
 2. **Modifying hyperparameters**
 
-   Some of the hyperparameters is as follow:
+   Some of the hyperparameters are as follow:
 
    ```TXT
    +-----------------+----------------------+-----------------------------------------------+
