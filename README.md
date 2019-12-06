@@ -50,7 +50,7 @@ tensorboardX==1.9
 Easily, you can install all requirement with:
 
 ```
-pip3 -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 You better do it under a Virtual environment, for Pytorch is kinda annoying to migrate between different versions.
