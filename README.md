@@ -186,6 +186,8 @@ Loss and BLEU Score:
 <img src="https://github.com/P3n9W31/AttEncDecRNN/blob/master/figures/bleu.png" width="400">
 </p>
 
+As the data I use is too simple, the results are **just a reference**.
+
 ## Results on Chinese-English translation
 
 1. Epoch-1
@@ -248,7 +250,7 @@ Loss and BLEU Score:
    +------------+-------------------------------------------------------------------------------------------------------------------------------------------+
    ```
 
-   As the data I use is too simple, the results are **just a reference**.
+   Again, the results are **just a reference**.
 
 
 
